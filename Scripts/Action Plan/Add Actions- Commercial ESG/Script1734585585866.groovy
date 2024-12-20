@@ -115,3 +115,5 @@ WebUI.waitForPageLoad(0)
 
 WebUI.verifyElementPresent(findTestObject('Action plan/AddActionsCommercialESG/Title_Editaction'), 0)
 
+WebUI.closeBrowser()
+
