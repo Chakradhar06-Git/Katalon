@@ -29,5 +29,3 @@ WebUI.click(findTestObject('Action plan/Page_AMP/pge_Action Plan'))
 
 WebUI.click(findTestObject('Action plan/Page_AMP/pge_Add Action'))
 
-WebUI.acceptAlert()
-
