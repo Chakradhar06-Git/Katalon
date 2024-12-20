@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Title_Editaction</name>
+   <tag></tag>
+   <elementGuidId>bb6c98f7-cb30-4ae0-becc-d3b89ad3f52b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h1.subheader-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//main[@id='js-page-content']/div/h1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot; Edit action&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>57dc3bea-dbff-4d3e-85a4-3ca5dd2d3595</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>subheader-title</value>
+      <webElementGuid>306b6449-7b2a-403a-81ba-8fb610dfe28d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+         Edit action    </value>
+      <webElementGuid>539ca43a-d7e0-4a7e-a98c-aea7a96ce7ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;js-page-content&quot;)/div[@class=&quot;subheader&quot;]/h1[@class=&quot;subheader-title&quot;]</value>
+      <webElementGuid>d46cdc04-4731-49be-8fa3-f46791dc433a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//main[@id='js-page-content']/div/h1</value>
+      <webElementGuid>ac2d88c2-2746-4fc5-b7e9-9e59a4a40139</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thursday, December 19, 2024'])[2]/following::h1[1]</value>
+      <webElementGuid>c95edaea-757f-4e1d-9712-465ecbb1573a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::h1[1]</value>
+      <webElementGuid>82b9f969-bd4e-4ef3-8c61-f10156339d85</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='List Actions'])[2]/preceding::h1[1]</value>
+      <webElementGuid>7d03d49c-4ca2-4387-ba23-f45ec330e05c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit action']/parent::*</value>
+      <webElementGuid>fa51a452-8cd4-4278-a73d-92c4c6808cd9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>cc11fdfc-e86d-4362-bd35-0b0e036d12c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = '
+         Edit action    ' or . = '
+         Edit action    ')]</value>
+      <webElementGuid>6c25dd8b-af77-43c9-b63c-48ffa0768ff8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
