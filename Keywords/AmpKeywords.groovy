@@ -21,91 +21,148 @@ import internal.GlobalVariable
 public class AmpKeywords {
 	@Keyword
 	def AddActionCommercialESG() {
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Module'), ModuleName, false)
+		if ((WebUI.verifyTextPresent('Add Actions', false)) == true) {
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Asset'), Asset, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Module'), ModuleName, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Asset'), Asset, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Priority'), Priority, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Status'), Status, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_ResponsibleBy'), ResponsibleBy, false)
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Priority'), Priority, false)
+			if ((findTestObject('Object Repository/Action plan/AddActionsCommercialESG/txt_StartDateAndTime')) != null){
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_StartDateAndTime'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_StartDateAndTime'), StartDateandTime)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_StartDateAndTime'), StartDateandTime)
+			}
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Status'), Status, false)
+			if ((findTestObject('Action plan/AddActionsCommercialESG/txt_ResolutionDate')) != null){
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ResolutionDate'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ResolutionDate'), ExpectedResolutiondate)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ResolutionDate'), ExpectedResolutiondate)
+			}
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_ResponsibleBy'), ResponsibleBy, false)
+			if ((findTestObject('Action plan/AddActionsCommercialESG/txt_EndDate')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_EndDate'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_EndDate'), EndDateandtime)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_EndDate'), EndDateandtime)
+			}
 
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_StartDateAndTime'))
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_WaitingFor'), WaitingFor, false)
 
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_StartDateAndTime'), StartDateandTime)
+			if (TobesharedwiththeClient == TobesharedwiththeClient.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ToBeSharedWithTheClient'))
+			}
 
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ResolutionDate'), ExpectedResolutiondate)
+			if (Reportable == Reportable.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_Reportable'))
+			}
 
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_EndDate'), EndDateandtime)
+			if (client == Client.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ClientInformed'))
+			}
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_WaitingFor'), WaitingFor, false)
+			if (Commercial == Commercial.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_CommercialInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ToBeSharedWithTheClient'))
+			if (Finance == Finance.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_FinanceInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_Reportable'))
+			if (Technical == Technical.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_TechnicalInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ClientInformed'))
+			if (ESG == ESG.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_EsgInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_CommercialInformed'))
+			if (ClientManagement == ClientManagement.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ClientManagementInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_FinanceInformed'))
+			if (DebtManagement == DebtManagement.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_DebtManagementInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_TechnicalInformed'))
+			if(HSE == HSE.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_HseInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_EsgInformed'))
+			if(OM == OM.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_OMInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_ClientManagementInformed'))
+			if(SiteManagement == SiteManagement.equalIgnoreCase("Yes")) {
+				WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_SiteManagementDeptInformed'))
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_DebtManagementInformed'))
+			WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Title'), Title)
+			WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Description'), Description)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Category'), CategoryBy, false)
+			WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Frequency'), Frequency, false)
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_HseInformed'))
+			if ((findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost'), ActualOpExcost)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost'), ActualOpExcost)
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_OMInformed'))
+			if ((findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost'), ActualCapExcost)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost'), ActualCapExcost)
+			}
 
-		WebUI.check(findTestObject('Action plan/AddActionsCommercialESG/chk_SiteManagementDeptInformed'))
+			if((findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost'), ProjectedopExcost)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost'), ProjectedopExcost)
+			}
 
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Title'), Title)
+			if((findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost'), ProjectedCapExcost)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost'), ProjectedCapExcost)
+			}
 
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Description'), Description)
+			if((findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget'), AcquisitionBudget)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget'), AcquisitionBudget)
+			}
 
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Category'), Category, false)
-
-		WebUI.selectOptionByLabel(findTestObject('Action plan/AddActionsCommercialESG/lst_Frequency'), Frequency, false)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualOpExcost'), ActualOpExcost)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ActualCapExcost'), ActualCapExcost)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedOpExcost'), ProjectedopExcost)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_ProjectedCapExcost'), ProjectedCapExcost)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_AcquisitionBudget'), AcquisitionBudget)
-
-		WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget'))
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget'), OperatingBudget)
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Latitude'), Latitude)
-
-		WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Longitude'), Longitude)
-
-		WebUI.click(findTestObject('Action plan/AddActionsCommercialESG/btn_Save'))
-
-		WebUI.waitForPageLoad(0)
-
-		WebUI.verifyElementPresent(findTestObject('Action plan/AddActionsCommercialESG/Title_Editaction'), 0)
+			if((findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget')) != null) {
+				WebUI.clearText(findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget'))
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget'), OperatingBudget)
+			}
+			else {
+				WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_OperatingBudget'), OperatingBudget)
+			}
+			WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Latitude'), Latitude)
+			WebUI.setText(findTestObject('Action plan/AddActionsCommercialESG/txt_Longitude'), Longitude)
+			WebUI.click(findTestObject('Action plan/AddActionsCommercialESG/btn_Save'))
+			WebUI.waitForPageLoad(0)
+			WebUI.verifyElementPresent(findTestObject('Action plan/AddActionsCommercialESG/Title_Editaction'), 0)
+			
+			println "The user is able to create action for Commercial ESG."
+		}
 	}
 }
 

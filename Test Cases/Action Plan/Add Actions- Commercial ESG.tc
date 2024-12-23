@@ -156,7 +156,7 @@
    <variableLinks>
       <testDataLinkId>b483f230-1578-439b-ab5a-72b81ad59b05</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Category</value>
+      <value>CategoryBy</value>
       <variableId>6109e115-95ad-4b43-8835-a8dbd4fb9b10</variableId>
    </variableLinks>
    <variableLinks>
@@ -379,7 +379,7 @@
       <description></description>
       <id>6109e115-95ad-4b43-8835-a8dbd4fb9b10</id>
       <masked>false</masked>
-      <name>Category</name>
+      <name>CategoryBy</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
