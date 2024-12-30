@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Open Account Parabank</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4752fcfc-f2ab-4e69-bb34-20baf5cb76b4</testCaseGuid>
+</TestCaseEntity>

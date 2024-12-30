@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test1" time="26.317" tests="1" failures="0" errors="0">
+   <testsuite name="Test1" tests="1" failures="0" errors="0" time="26.317" skipped="0" timestamp="30-12-2024T17:28:41" hostname="chakradhar.koduru - WIN-L-0047.nec.local" id="Test Suites/Test1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\chakradhar.koduru\\Katalon Studio\\training\\Reports\\20241230_172824\\Test1\\20241230_172830"/>
+         <property name="logFiles" value="C:\\Users\\chakradhar.koduru\\Katalon Studio\\training\\Reports\\20241230_172824\\Test1\\20241230_172830\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="chakradhar.koduru - WIN-L-0047.nec.local"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.0.1.223"/>
+         <property name="browser" value="Chrome 131.0.0.0"/>
+         <property name="hostAddress" value="192.168.29.166"/>
+         <property name="sessionId" value="0cb9b70e6293bc6cec4b279c38aa32b9"/>
+         <property name="seleniumVersion" value="4.22.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Training Parabank/Register account" time="25.602" classname="Test Cases/Training Parabank/Register account" status="PASSED">
+         <system-out><![CDATA[30-12-2024T17:28:42 - [TEST_CASE][PASSED] - Test Cases/Training Parabank/Register account: Test Cases/Training Parabank/Register account
+
+30-12-2024T17:28:43 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+30-12-2024T17:28:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+30-12-2024T17:28:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+30-12-2024T17:28:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+30-12-2024T17:28:50 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+30-12-2024T17:28:50 - [MESSAGE][PASSED] - Current window maximized
+
+30-12-2024T17:28:50 - [TEST_STEP][PASSED] - navigateToUrl(GlobalURL): Navigate to 'https://parabank.parasoft.com/parabank/index.htm' successfully
+
+30-12-2024T17:28:54 - [MESSAGE][PASSED] - Navigate to 'https://parabank.parasoft.com/parabank/index.htm' successfully
+
+30-12-2024T17:28:54 - [TEST_STEP][PASSED] - verifyTextPresent("Experience the difference", false): Text 'Experience the difference' is present on page 
+
+30-12-2024T17:28:54 - [MESSAGE][PASSED] - Text 'Experience the difference' is present on page 
+
+30-12-2024T17:28:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_ParaBankHomePage/btnRegister")): Object: 'Object Repository/Page_ParaBankHomePage/btnRegister' is clicked on
+
+30-12-2024T17:28:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ParaBankHomePage/btnRegister' is clicked on
+
+30-12-2024T17:28:56 - [TEST_STEP][PASSED] - verifyTextPresent("Signing up is easy!", false): Text 'Signing up is easy!' is present on page 
+
+30-12-2024T17:28:56 - [MESSAGE][PASSED] - Text 'Signing up is easy!' is present on page 
+
+30-12-2024T17:28:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtFirstName"), FirstName): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtFirstName'
+
+30-12-2024T17:28:57 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtFirstName'
+
+30-12-2024T17:28:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtLastName"), LastName): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtLastName'
+
+30-12-2024T17:28:58 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtLastName'
+
+30-12-2024T17:28:58 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtCustomerAddress"), Address): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtCustomerAddress'
+
+30-12-2024T17:28:59 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtCustomerAddress'
+
+30-12-2024T17:28:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtCity"), City): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtCity'
+
+30-12-2024T17:29:00 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtCity'
+
+30-12-2024T17:29:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtState"), State): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtState'
+
+30-12-2024T17:29:01 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtState'
+
+30-12-2024T17:29:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtZipCode"), ZipCode): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtZipCode'
+
+30-12-2024T17:29:01 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtZipCode'
+
+30-12-2024T17:29:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtPhoneNumber"), PhoneNumber): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtPhoneNumber'
+
+30-12-2024T17:29:02 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtPhoneNumber'
+
+30-12-2024T17:29:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtSSN"), SSN): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtSSN'
+
+30-12-2024T17:29:03 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtSSN'
+
+30-12-2024T17:29:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtUsername"), UserName): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtUsername'
+
+30-12-2024T17:29:04 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtUsername'
+
+30-12-2024T17:29:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtPassword"), Password): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtPassword'
+
+30-12-2024T17:29:05 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtPassword'
+
+30-12-2024T17:29:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_ParaBank_RegisterAccount/txtConfirmPassword"), ConfirmPassword): Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtConfirmPassword'
+
+30-12-2024T17:29:06 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_ParaBank_RegisterAccount/txtConfirmPassword'
+
+30-12-2024T17:29:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_ParaBank_RegisterAccount/btnConfirm")): Object: 'Object Repository/Page_ParaBank_RegisterAccount/btnConfirm' is clicked on
+
+30-12-2024T17:29:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_ParaBank_RegisterAccount/btnConfirm' is clicked on
+
+30-12-2024T17:29:07 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+30-12-2024T17:29:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[30-12-2024T17:28:41 - [TEST_SUITE][PASSED] - Test1: Test Cases/Training Parabank/Register account]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

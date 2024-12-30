@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test1,Chrome 131.0.0.0,,,30-12-2024 17:28:41,30-12-2024 17:29:07,26.317s,PASSED
+,,,,,,,
+Test Cases/Training Parabank/Register account,Chrome 131.0.0.0,,,30-12-2024 17:28:42,30-12-2024 17:29:07,25.602s,PASSED
+"openBrowser("""")",Chrome 131.0.0.0,,,30-12-2024 17:28:43,30-12-2024 17:28:50,6.282s,PASSED
+maximizeWindow(),Chrome 131.0.0.0,,,30-12-2024 17:28:50,30-12-2024 17:28:50,0.196s,PASSED
+navigateToUrl(GlobalURL),Chrome 131.0.0.0,,,30-12-2024 17:28:50,30-12-2024 17:28:54,4.139s,PASSED
+"verifyTextPresent(""Experience the difference"", false)",Chrome 131.0.0.0,,,30-12-2024 17:28:54,30-12-2024 17:28:55,0.461s,PASSED
+"click(findTestObject(""Page_ParaBankHomePage/btnRegister""))",Chrome 131.0.0.0,,,30-12-2024 17:28:55,30-12-2024 17:28:56,1.108s,PASSED
+"verifyTextPresent(""Signing up is easy!"", false)",Chrome 131.0.0.0,,,30-12-2024 17:28:56,30-12-2024 17:28:56,0.525s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtFirstName""), FirstName)",Chrome 131.0.0.0,,,30-12-2024 17:28:56,30-12-2024 17:28:57,0.904s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtLastName""), LastName)",Chrome 131.0.0.0,,,30-12-2024 17:28:57,30-12-2024 17:28:58,0.908s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtCustomerAddress""), Address)",Chrome 131.0.0.0,,,30-12-2024 17:28:58,30-12-2024 17:28:59,0.895s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtCity""), City)",Chrome 131.0.0.0,,,30-12-2024 17:28:59,30-12-2024 17:29:00,0.861s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtState""), State)",Chrome 131.0.0.0,,,30-12-2024 17:29:00,30-12-2024 17:29:01,0.844s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtZipCode""), ZipCode)",Chrome 131.0.0.0,,,30-12-2024 17:29:01,30-12-2024 17:29:01,0.847s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtPhoneNumber""), PhoneNumber)",Chrome 131.0.0.0,,,30-12-2024 17:29:01,30-12-2024 17:29:02,0.895s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtSSN""), SSN)",Chrome 131.0.0.0,,,30-12-2024 17:29:02,30-12-2024 17:29:03,0.831s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtUsername""), UserName)",Chrome 131.0.0.0,,,30-12-2024 17:29:03,30-12-2024 17:29:04,0.869s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtPassword""), Password)",Chrome 131.0.0.0,,,30-12-2024 17:29:04,30-12-2024 17:29:05,0.872s,PASSED
+"setText(findTestObject(""Page_ParaBank_RegisterAccount/txtConfirmPassword""), ConfirmPassword)",Chrome 131.0.0.0,,,30-12-2024 17:29:05,30-12-2024 17:29:06,0.895s,PASSED
+"click(findTestObject(""Page_ParaBank_RegisterAccount/btnConfirm""))",Chrome 131.0.0.0,,,30-12-2024 17:29:06,30-12-2024 17:29:07,1.096s,PASSED
+closeBrowser(),Chrome 131.0.0.0,,,30-12-2024 17:29:07,30-12-2024 17:29:07,0.528s,PASSED
